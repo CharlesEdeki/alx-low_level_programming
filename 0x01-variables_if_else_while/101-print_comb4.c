@@ -1,30 +1,30 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints combo4
- *
- * Return: Always 0 (Sucess)
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c;
-	int d = 49;
-	int u = 50;
+	int n, m, l;
 
-	for (c = 48; c <= 55; ++c)
+	for (n = 48; n < 58; n++)
 	{
-		for (d = c + 1; d <= 56; ++d)
+		for (m = 49; m < 58; m++)
 		{
-			for (u = 50; u <= 57; ++u)
+			for (l = 50; l < 58; l++)
 			{
-				putchar(c);
-				putchar(d);
-				putchar(u);
-				if (c != 55 || d != 56 || u != 57)
+				if (l > m && m > n)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
