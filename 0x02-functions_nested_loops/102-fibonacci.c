@@ -15,18 +15,18 @@ int main(void)
 
 	c = 2;
 
-	for (i = 1; i <= 50; ++i)
+	for (a = 1; a <= 50; ++a)
 	{
-		if (j != 20365011074)
+		if (b != 20365011074)
 		{
-			printf("%ld, ", j);
+			printf("%ld, ", b);
 		} else
 		{
-			printf("%ld\n", j);
+			printf("%ld\n", b);
 		}
-		next = j + k;
-		j = k;
-		k = next;
+		next = b + c;
+		b = c;
+		c = next;
 	}
 
 	return (0)
