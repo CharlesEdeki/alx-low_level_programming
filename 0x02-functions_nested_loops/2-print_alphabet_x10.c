@@ -1,19 +1,25 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet
+ * print_alphabet_x10 - print alphabet 10 times
  *
  * Return: void
  */
-void print_alphabet(void)
-{
-	char letter = 'a';
 
-	while (letter <= 'z')
+void print_alphabet_x10(void)
+{
+	int i = 0;
+	char letter = 'a';
+	while (i < 10)
 	{
-		_putchar(letter);
-		letter++;
+		letter = 'a';
+		while (letter <= 'z')
+		{
+			_putchar(letter);
+			letter++;
+		}
+		_putchar('\n');
+
+		i++;
 	}
-	_putchar('\n');
 }
