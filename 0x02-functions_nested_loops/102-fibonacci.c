@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 #include "main.h"
 
 /**
@@ -29,5 +29,5 @@ int main(void)
 		c = next;
 	}
 
-	return (0)
+	return (0);
 }
