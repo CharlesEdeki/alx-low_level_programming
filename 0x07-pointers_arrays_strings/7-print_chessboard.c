@@ -1,26 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_chessboard - print the chessboard, 2d array
- * @a: 2d array of chars
- *Return: void
- */
+ * print_chessboard - prints chessboard.
+ * @a: matrix
+*/
+
 void print_chessboard(char (*a)[8])
 {
-	/*Declaring variables*/
 	int i, j;
 
-	i = 0;
-	while (i < 8) /*number repetitions*/
+	for (i = 0; i < 8; i++)
 	{
-		j = 0;
-		while (j < 8)
+		for (j = 0; j < 8; j++)
 		{
-			_putchar (a[i][j]);
-			j++;
+			_putchar(*(*(i + a) + j));
 		}
-		_putchar ('\n'); /*print new line*/
-		i++; /*add +1*/
+	_putchar('\n');
 	}
-
 }
